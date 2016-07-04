@@ -83,6 +83,23 @@ Para apagar um diretório que não está vazio:
 rm -r diretorio
 Exemplo: rm -r musicas-antigas
 
+Criar uma cópia de um arquivo:
+cp arquivo-original arquivo-novo
+Exemplo: cp mensagem.txt mensagem2.txt
+
+Mover um arquivo (renomear):
+mv arquivo-original arquivo-nome
+Exemplo: mv mensagem.txt mensagemNova.txt
+
+Mover arquivo para um outro diretório:
+mv arquivo.txt diretorio/
+Exemplo: mensagem.txt projetos/
+
+Mover arquivo de diretório e mudando o nome do mesmo:
+mv arquivo-original diretorio/arquivo-novo-nome
+Exemplo: mv mensagem2.txt projetos/mensagem3.txt
+
+
 
 
 

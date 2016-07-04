@@ -1,0 +1,54 @@
+Linux - Principais comandos e anotações
+
+Exibir em qual diretório se está atualmente:
+pwd
+
+Listar arquivos e pastas do diretorio atual:
+ls
+
+Criar um arquivo já setando um texto:
+echo "conteúdo" > saida.txt
+Exemplo: echo "Bem vindo" > bemvindo.txt
+
+Ler o conteúdo de um arquivo diretamente no terminal:
+cat arquivo.txt
+Exemplo: cat bemvindo.txt
+
+Limpar o terminal:
+clear
+
+Listar arquivos de um diretório exibindo mais informações:
+ls -l
+
+Listar inclusive arquivos ocultos:
+ls -a
+ls -la
+ls -al
+
+Para ver o manual de determinado comando:
+man comando
+Exemplo: man clear
+Obs: para sair digitar "Q"
+
+Para entrar em um diretório
+cd diretório
+Exemplo: cd musicas
+
+Para voltar um nível de diretório:
+cd ..
+
+Concatenar uma informação dentro de um arquivo já existente:
+echo "conteúdo"
+Exemplo: echo "Informe seu nome" >> bemvindo.txt
+
+Criar um diretório:
+mkdir diretorio
+Exemplo: mkdir musicas-novas
+
+Visualizar diretório raiz do HD:
+ls /
+
+
+
+
+

@@ -1,2 +1,2 @@
 # comandos-linux
-Principais comandos do Linux e anotações do curso 
+Principais comandos do Linux, testes e anotações do curso. 

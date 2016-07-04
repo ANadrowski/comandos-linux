@@ -48,6 +48,47 @@ Exemplo: mkdir musicas-novas
 Visualizar diretório raiz do HD:
 ls /
 
+Mostrar quem é o usuário atual (who am I?):
+whoami
+Exemplo: whoami (saída foi: aislan)
+
+Para deletar um diretório (funciona apenas se o diretório estiver vazio):
+rmdir pasta
+Exemplo: rmdir musicas-antigas
+
+Para deletar um arquivo:
+rm arquivo.txt
+Exemplo: rm bemvindo.txt
+
+Imprimir o conteúdo de varios arquivos com base em nomes semelhantes:
+cat bemvindo*.txt
+cat bemvindo?.txt
+Obs: quando usado o * exibirá o conteúdo de arquivos bemvindo[....].txt (diversos caracteres), já usando o comando cat bemvindo?.txt apenas arquivos bemvindo[.].txt (com um caracter).
+
+Por exemplo, em um diretório assim:
+bemvindo10.txt  bemvindo2.txt  bemvindo3.txt  bemvindo.txt
+
+Temos (com *):
+teste arquivo 10
+teste arquivo 2
+teste arquivo 3
+Bem vindo
+Informe seu nome
+
+Já com o ? temos:
+teste arquivo 2
+teste arquivo 3
+
+Para apagar um diretório que não está vazio:
+rm -r diretorio
+Exemplo: rm -r musicas-antigas
+
+
+
+
+
+
+
 
 
 

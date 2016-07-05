@@ -99,14 +99,23 @@ Mover arquivo de diretório e mudando o nome do mesmo:
 mv arquivo-original diretorio/arquivo-novo-nome
 Exemplo: mv mensagem2.txt projetos/mensagem3.txt
 
+Compactar uma pasta: (formato .zip):
+zip -r nome-arquivo.zip pasta
+Exemplo: zip -r pastaCompactada.zip testes
 
+Para compactar e não mostrar o log:
+zip -rq nome-arquivo.zip pasta
+Exemplo: zip -r pastaCompactada.zip testes
 
+Para descompactar um arquivo .zip:
+unzip -q arquivo.zip
+Exemplo: unzip -q musicas.zip
 
+Para compactar uma pasta no formato .tar:
+tar -cz pasta > arquivo.tar.gz
+Exemplo: tar -cz musicas > musicas.tar.gz
 
-
-
-
-
-
-
+Para descompactar um .tar:
+tar -xz < arquivo.tar.gz
+Exemplo: tar -xz < musicas.tar.gz
 

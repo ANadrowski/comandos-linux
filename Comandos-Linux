@@ -38,7 +38,7 @@ Para voltar um nível de diretório:
 cd ..
 
 Concatenar uma informação dentro de um arquivo já existente:
-echo "conteúdo"
+echo "conteúdo" >> arquivo.txt
 Exemplo: echo "Informe seu nome" >> bemvindo.txt
 
 Criar um diretório:
@@ -118,4 +118,73 @@ Exemplo: tar -cz musicas > musicas.tar.gz
 Para descompactar um .tar:
 tar -xz < arquivo.tar.gz
 Exemplo: tar -xz < musicas.tar.gz
+
+Para mudar a data de edição de um arquivo sem editá-lo pode-se usar o comando:
+touch   
+Exemplo: touch arquivo.txt
+
+Para consultar os parâmetros que determinado comando aceita:
+help pwd
+date --help
+
+Ler as 10 primeiras linhas de um arquivo:
+head arquivo.txt
+
+Ler as N primeiras linhas de um arquivo:
+head -n N arquivo.txt
+Exemplo: head -n 3 arquivo.txt
+
+Ler as últimas 10 linhas do arquivo:
+tail arquivo.txt
+
+Ler as N últimas linhas do arquivo:
+tail -n N arquivo.txt
+Exemplo: tail -n 3 arquivo.txt
+
+Abrir arquivo para leitura:
+less arquivo.txt
+
+
+-----  Edição de texto usando o vi ------
+
+Para abrir um arquivo de texto no editor do terminal:
+vi arquivl.txt
+
+Dentro do editor vi, para inserir um texto onde está o cursor deve-se pressionar a tecla "i".
+Para sair do modo de edição, usa-se a tecla "ESC".
+
+Para salver, tecla ":" e depois w.
+
+Para sair do arquivo, ":" e depois q.
+
+Para inserir um texto do caracter seguinte usa-se a tecla "a".
+
+Para apagar o caracter atual usa-se a tecla "x", para excluir os próximos 12 caracteres, digita-se 12 e x.
+
+Salvar e sair:
+:wq
+
+Para remover a linha completa: duas vezes a tecla d, "dd".
+
+Sair sem salvar:
+:q!
+
+Para inserir no final da linha: A maiusculo.
+
+Para ir para a última linha: A
+
+Para ir para a linha N: NG
+Exemplo: 5G
+
+Para buscar um termo no texto: /
+Exemplo: /Teste
+Irá procurar a palavra Teste, com n vai para a próximo e N volta a um anterior.
+
+Para copiar uma linha:
+yy
+
+Para colar o texto:
+p.
+
+
 

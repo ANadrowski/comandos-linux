@@ -186,5 +186,39 @@ yy
 Para colar o texto:
 p.
 
+-------------------------------------------------------------
+
+Para ver os processos que estão rodando na atualmente:
+ps -e
+
+Para finalizar (matar) um processo:
+kill PID
+Exemplo: kill 15525
+
+Para finalizar (matal) um processo sem dar chance para ele voltar:
+kill -9 PID
+Exemplo: kill -9 15525
+
+Visualizar mais informações sobre os processos:
+kill -ef
+
+Para encontrar determinado processo:
+ps -ef | grep chrome
+
+Para visualizar detalhes de processamento:
+top
+
+Para parar todos os processos com base em determinado nome:
+killall -9 TERMO
+Exmplo: killall -9 chrome
+
+
+
+
+
+
+
+
+
 
 

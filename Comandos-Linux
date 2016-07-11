@@ -212,6 +212,24 @@ Para parar todos os processos com base em determinado nome:
 killall -9 TERMO
 Exmplo: killall -9 chrome
 
+Visualizar árvore de processos:
+pstree
+
+Ver lista de processos "parados":
+jobs
+
+Jogar processo para execução em background:
+bg ID
+Exemplo: bg 1
+
+Para trazer o processo novamento ao foreground:
+fg ID
+Exemplo: fg 1
+
+Para abrir o programa e executá-lo diretamente no background:
+[comando-programa] &
+Exemplo: firefox &
+
 
 
 

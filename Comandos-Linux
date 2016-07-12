@@ -200,7 +200,7 @@ kill -9 PID
 Exemplo: kill -9 15525
 
 Visualizar mais informações sobre os processos:
-kill -ef
+ps -ef
 
 Para encontrar determinado processo:
 ps -ef | grep chrome
@@ -230,12 +230,56 @@ Para abrir o programa e executá-lo diretamente no background:
 [comando-programa] &
 Exemplo: firefox &
 
+Para executar um script:
+sh nome-bash
+Exemplo: sh mostraMensagem
 
+Tipos de permissões:
+r = read
+w = write
+x = execute
 
+Para adicionar a permissão de execução de um arquivo:
+chmod +x arquivo
+Exemplo: chmod +x bemvindo.txt
 
+Para retirar a permissão de execução de um arquivo:
+chmod -x arquivo
+Exemplo: chmod -x bemvindo.txt
 
+Quando está com a permissão de execução pode-se usar o seguinte comando para executar:
+./arquivo
+Exemplo: ./bemvindo.txt
 
+Para localizar um arquivo no HD de forma rápida:
+locate arquivo
+Exemplo: locate firefox
 
+Ver qual é a raiz do comando:
+which comando
+Exemplo: which firefox
+
+Para executar um comando como root:
+sudo comando
+Exemplo: sudo mv programa /usr/bin
+
+Mudar a senha do usuário atual:
+passwd
+
+Mudar a senha do root:
+sudo passwd
+
+Mudar de usuário:
+su usuario
+Exemplo: su aislan
+
+Para adicionar um novo usuário no sistema Linux:
+adduser nome
+Exemplo: adduser jose
+
+Retirar permissão de usuário:
+chmod o-rx usuario
+Exemplo: chmod o-rx jose
 
 
 

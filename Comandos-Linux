@@ -281,6 +281,50 @@ Retirar permissão de usuário:
 chmod o-rx usuario
 Exemplo: chmod o-rx jose
 
+Para ver as variáveis ambiente:
+env | grep PATH
 
+Para adicionar um diretorio ao PATH:
+PATH=$PATH:/diretorio
+Exemplo: PATH=$PATH:/home/aislan/workspace
 
+Para adicionar um PATH que carregue sempre ao abrir um bash novo, deve-se editar o arquivo .bashrc:
+Deve-se ir em /home/aislan e digitar "vi .bashrc" inserindo no final do arquivo o seguinte texto:
+PATH=$PATH:/diretorio
+Exemplo: PATH=$PATH:/home/aislan/workspace
 
+Para atualizar a lista de programa para instalação:
+sudo apt-get update
+
+Para exibir a lista de programas disponíveis com base em um nome:
+apt-cache search nome
+Exemplo: apt-cache search git
+
+Para instalar um programa vi apt:
+sudo apt-get install nome
+Exemplo: sudo apt-get install xoscope
+
+Para desistalar um programa via apt:
+sudo apt-get remove nome
+Exemplo: sudo apt-get remove xoscope
+
+Instalar programa .deb:
+sudo dpkg -i programa.deb
+
+Desistalar um programa .deb:
+sudo dpkg -r nome-do-pacote
+
+Parar um serviço que está rodando:
+sudo service nome stop
+Exemplo: sudo service git stop
+
+Startar um servico:
+sudo service nome start
+Exemplo: sudo service git start
+
+Fazer instalação de um programa pelo código-fonte:
+
+1 - baixar 
+2 - ./configure
+3 - make
+4 - sudo make install

@@ -323,7 +323,6 @@ sudo service nome start
 Exemplo: sudo service git start
 
 Fazer instalação de um programa pelo código-fonte:
-
 1 - baixar 
 2 - ./configure
 3 - make
